@@ -26,7 +26,7 @@ Option B: Pull from Remote Registry (Docker Hub)
 
 Bash
 
-docker run -p 8080:8080 danylopovar/todoapp:1.0.0
+docker run -p 8080:8080 d4vp/todoapp:1.0.0
 3. Application Access
 Verify the deployment status by accessing the application interface:
 
