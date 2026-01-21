@@ -15,25 +15,25 @@ Initialize the build stage to generate the local image artifact. This process in
 ```bash
 docker build -t todoapp .
 2. Runtime Execution
-Execute the container instance mapping host port 8081 to container port 8000.
+Execute the container instance mapping host port 8080 to container port 8080.
 
 Option A: Run from Local Build
 
 Bash
 
-docker run -p 8081:8000 todoapp
+docker run -p 8080:8080 todoapp
 Option B: Pull from Remote Registry (Docker Hub)
 
 Bash
 
-docker run -p 8081:8000 d4vp/todoapp:1.0.0
+docker run -p 8080:8080 danylopovar/todoapp:1.0.0
 3. Application Access
 Verify the deployment status by accessing the application interface:
 
-URL: http://localhost:8081
+URL: http://localhost:8080
 
 Troubleshooting
-Error: Port Allocation Failure If port 8081 is occupied, terminate existing containers:
+Error: Port Allocation Failure If port 8080 is occupied, terminate existing containers:
 
 Bash
 
